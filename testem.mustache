@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/node_modules/mocha/mocha.css" />
+    <script src="/node_modules/mocha/mocha.js"></script>
+    <script src="/node_modules/chai/chai.js"></script>
+    <script src="/testem.js"></script>
+    <script>
+      Testem.afterTests(
+        function(config, data, callback) {
+          var coverage = JSON.stringify(window.__coverage__);
+          var xhr = new XMLHttpRequest();
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+              callback();
+            }
+          };
+          xhr.open('POST', '/coverage', true);
+          xhr.send(coverage);
+        });
+    </script>
+    <script>mocha.setup('bdd')</script>
+
+    <!-- load code you want to test here -->
+    <script src="//des-static.vocento.com/voonto2/latest/voonto.js" data-test="true"></script>
+    {{#serve_files}}
+    <script src="{{src}}"></script>
+    {{/serve_files}}
+    <!-- load your test files here -->
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script>
+      mocha.run()
+    </script>
+  </body>
+</html>

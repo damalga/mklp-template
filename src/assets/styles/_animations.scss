@@ -1,0 +1,84 @@
+// Transitions for group images and text
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.swiper-slide-active{
+    .swiper-slide-txt-title{
+        animation: slideInFromTop 1.2s forwards;
+    }
+    .swiper-slide-img-group-1 {
+        animation: slideInFromBottom 1.3s forwards;
+    }
+    .swiper-slide-img-group-2 {
+        animation: slideInFromLeft 1.1s forwards;
+    }
+    .swiper-slide-img-group-3 {
+        animation: slideInFromTop 1s forwards;
+    }
+    .swiper-slide-img-mobile {
+        animation: slideInFromBottom 1s forwards;
+    }
+}
+
+// Transition in textLoop
+.fade-in {
+    opacity: 1;
+    transition: opacity .4s ease-in;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity .4s ease-out;
+}
+
+// Float
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-0.2rem) scale(1.08);
+    }
+    100% {
+        transform: translateY(0) scale(1);
+    }
+}

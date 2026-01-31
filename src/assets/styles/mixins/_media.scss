@@ -1,0 +1,84 @@
+@use 'sass:map';
+
+$phone: 420px;
+$big-phone: 640px;
+$tablet: 880px;
+$big-tablet: 1080px;
+$desktop: 1280px;
+$big-desktop: 1680px;
+
+$breakpoints: (
+  'phone': $phone,
+  'big-phone': $big-phone,
+  'tablet': $tablet,
+  'big-tablet': $big-tablet,
+  'desktop': $desktop,
+  'big-desktop': $big-desktop
+) !default;
+
+@mixin media($breakpoint) {
+  // If the key exists in the map
+  @if map.has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media screen and (max-width: map.get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "`#{$breakpoint}`. doesn't exists"
+        + "Available breakpoints are: #{map.keys($breakpoints)}.";
+  }
+}
+
+@mixin media-between($from-breakpoint, $to-breakpoint) {
+  // If the key exists in the map
+  @if map.has-key($breakpoints, $from-breakpoint) {
+    // If the key exists in the map
+    @if map.has-key($breakpoints, $to-breakpoint) {
+      // Prints a media query based on the value
+      @media (min-width: map.get($breakpoints, $from-breakpoint)) and (max-width: map.get($breakpoints, $to-breakpoint)) {
+        @content;
+      }
+    }
+    // If the key doesn't exist in the map
+    @else {
+      @warn "`#{$to-breakpoint}`. doesn't exists"
+          + "Available breakpoints are: #{map.keys($breakpoints)}.";
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "`#{$breakpoint}`. doesn't exists"
+        + "Available breakpoints are: #{map.keys($breakpoints)}.";
+  }
+}
+
+$only-breakpoints: (
+  'big-desktop': (min: $desktop, max: $big-desktop),
+  'desktop': (min: $big-tablet, max: $desktop),
+  'big-tablet': (min:  $tablet, max: $big-tablet),
+  'tablet': (min:  $big-phone, max: $tablet),
+  'big-phone': (min: $phone, max: $big-phone),
+  'phone': (min: 0px, max: $phone)
+) !default;
+
+@mixin media-only($breakpoint) {
+  // If the key exists in the map
+  @if map.has-key($only-breakpoints, $breakpoint) {
+    $breakpoint-map: map.get($only-breakpoints, $breakpoint);
+
+    // Prints a media query based on the value
+    @media (min-width: map.get($breakpoint-map, min)) and (max-width: map.get($breakpoint-map, max)) {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "`#{$breakpoint}`. doesn't exists"
+        + "Available breakpoints are: #{map.keys($breakpoints)}.";
+  }
+}
