@@ -1,0 +1,52 @@
+{
+  "name": "framework-ui-skeleton",
+  "version": "3.1.0",
+  "description": "Vocento Framework UI",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"./node_modules/.bin/testem ci --file testem.js --port ${JS_TEST_PORT}\"",
+    "tdd": "./node_modules/.bin/testem dev --file testem.json"
+  },
+  "author": "Iván Pérez <ivanperez@vocento.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^7.2.1",
+    "autoprefixer": "^10.4.0",
+    "chai": "^4.3.4",
+    "chromium": "^3.0.3",
+    "css-mqpacker": "^7.0.0",
+    "glob": "^7.2.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "handlebars-utils": "^1.0.6",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "jsdom": "^19.0.0",
+    "mocha": "^9.1.3",
+    "modernizr": "^3.11.8",
+    "modernizr-loader": "^1.0.1",
+    "npm-force-resolutions": "0.0.10",
+    "nyc": "^15.1.0",
+    "plugin-error": "^1.0.1",
+    "postcss-sort-media-queries": "^4.2.1",
+    "sass": "^1.96.0",
+    "shelljs": "^0.8.4",
+    "testem": "^3.6.0",
+    "vite": "^7.2.7",
+    "vite-plugin-handlebars": "^2.0.0"
+  },
+  "resolutions": {
+    "inline-critical": "9.0.1",
+    "critical": "4.0.1",
+    "through2": "^3.0.1",
+    "lodash.isstring": "^4.0.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "swiper": "^11.1.4"
+  },
+  "packageManager": "pnpm@10.23.0+sha512.21c4e5698002ade97e4efe8b8b4a89a8de3c85a37919f957e7a0f30f38fbc5bbdd05980ffe29179b2fb6e6e691242e098d945d1601772cad0fef5fb6411e2a4b"
+}

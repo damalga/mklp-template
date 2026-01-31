@@ -1,0 +1,129 @@
+
+// @font-face {
+//   font-family: 'ABCDisplay Ultralight';
+//   src: url('../fonts/ABCDisplay-ultralight/ABCDisplay-Ul.eot');
+//   src: url('../fonts/ABCDisplay-ultralight/ABCDisplay-Ul.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/ABCDisplay-ultralight/ABCDisplay-Ul.woff2') format('woff2'),
+//       url('../fonts/ABCDisplay-ultralight/ABCDisplay-Ul.woff') format('woff'),
+//       url('../fonts/ABCDisplay-ultralight/ABCDisplay-Ul.ttf') format('truetype'),
+//       url('../fonts/ABCDisplay-ultralight/ABCDisplay-Ul.svg#ABCDisplay-Ul') format('svg');
+//   font-weight: 100;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+@font-face {
+  font-family: 'ABCDisplay Light';
+  src: url('../fonts/ABCDisplay-light/ABCDisplay-Lg.eot');
+  src: url('../fonts/ABCDisplay-light/ABCDisplay-Lg.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCDisplay-light/ABCDisplay-Lg.woff2') format('woff2'),
+      url('../fonts/ABCDisplay-light/ABCDisplay-Lg.woff') format('woff'),
+      url('../fonts/ABCDisplay-light/ABCDisplay-Lg.ttf') format('truetype'),
+      url('../fonts/ABCDisplay-light/ABCDisplay-Lg.svg#ABCDisplay-Lg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABCText Light Italic';
+  src: url('../fonts/ABCText-light-italic/ABCText-LgIt.eot');
+  src: url('../fonts/ABCText-light-italic/ABCText-LgIt.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCText-light-italic/ABCText-LgIt.woff2') format('woff2'),
+      url('../fonts/ABCText-light-italic/ABCText-LgIt.woff') format('woff'),
+      url('../fonts/ABCText-light-italic/ABCText-LgIt.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABCText Semibold Italic';
+  src: url('../fonts/ABCText-semibold-italic/ABCText-SbIt.eot');
+  src: url('../fonts/ABCText-semibold-italic/ABCText-SbIt.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCText-semibold-italic/ABCText-SbIt.woff2') format('woff2'),
+      url('../fonts/ABCText-semibold-italic/ABCText-SbIt.woff') format('woff'),
+      url('../fonts/ABCText-semibold-italic/ABCText-SbIt.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABCDisplay Regular';
+  src: url('../fonts/ABCDisplay-regular/ABCDisplay-Rg.eot');
+  src: url('../fonts/ABCDisplay-regular/ABCDisplay-Rg.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCDisplay-regular/ABCDisplay-Rg.woff2') format('woff2'),
+      url('../fonts/ABCDisplay-regular/ABCDisplay-Rg.woff') format('woff'),
+      url('../fonts/ABCDisplay-regular/ABCDisplay-Rg.ttf') format('truetype'),
+      url('../fonts/ABCDisplay-regular/ABCDisplay-Rg.svg#ABCDisplay-Rg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABCDisplay Semibold';
+  src: url('../fonts/ABCDisplay-semibold/ABCDisplay-Sb.eot');
+  src: url('../fonts/ABCDisplay-semibold/ABCDisplay-Sb.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCDisplay-semibold/ABCDisplay-Sb.woff2') format('woff2'),
+      url('../fonts/ABCDisplay-semibold/ABCDisplay-Sb.woff') format('woff'),
+      url('../fonts/ABCDisplay-semibold/ABCDisplay-Sb.ttf') format('truetype'),
+      url('../fonts/ABCDisplay-semibold/ABCDisplay-Sb.svg#ABCDisplay-Sb') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'ABCDisplay Medium';
+//   src: url('../fonts/ABCDisplay-medium/ABCDisplay-Md.eot');
+//   src: url('../fonts/ABCDisplay-medium/ABCDisplay-Md.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/ABCDisplay-medium/ABCDisplay-Md.woff2') format('woff2'),
+//       url('../fonts/ABCDisplay-medium/ABCDisplay-Md.woff') format('woff'),
+//       url('../fonts/ABCDisplay-medium/ABCDisplay-Md.ttf') format('truetype'),
+//       url('../fonts/ABCDisplay-medium/ABCDisplay-Md.svg#ABCDisplay-Md') format('svg');
+//   font-weight: 700;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'ABCDisplay Bold';
+  src: url('../fonts/ABCDisplay-bold/ABCDisplay-Bd.eot');
+  src: url('../fonts/ABCDisplay-bold/ABCDisplay-Bd.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCDisplay-bold/ABCDisplay-Bd.woff2') format('woff2'),
+      url('../fonts/ABCDisplay-bold/ABCDisplay-Bd.woff') format('woff'),
+      url('../fonts/ABCDisplay-bold/ABCDisplay-Bd.ttf') format('truetype'),
+      url('../fonts/ABCDisplay-bold/ABCDisplay-Bd.svg#ABCDisplay-Bd') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ABCDisplay Black';
+  src: url('../fonts/ABCDisplay-black/ABCDisplay-Bk.eot');
+  src: url('../fonts/ABCDisplay-black/ABCDisplay-Bk.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/ABCDisplay-black/ABCDisplay-Bk.woff2') format('woff2'),
+      url('../fonts/ABCDisplay-black/ABCDisplay-Bk.woff') format('woff'),
+      url('../fonts/ABCDisplay-black/ABCDisplay-Bk.ttf') format('truetype'),
+      url('../fonts/ABCDisplay-black/ABCDisplay-Bk.svg#ABCDisplay-Bk') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+// @font-face {
+//   font-family: 'ABCDisplay Ultrablack';
+//   src: url('../fonts/ABCDisplay-ultrablack/ABCDisplay-Ub.eot');
+//   src: url('../fonts/ABCDisplay-ultrablack/ABCDisplay-Ub.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/ABCDisplay-ultrablack/ABCDisplay-Ub.woff2') format('woff2'),
+//       url('../fonts/ABCDisplay-ultrablack/ABCDisplay-Ub.woff') format('woff'),
+//       url('../fonts/ABCDisplay-ultrablack/ABCDisplay-Ub.ttf') format('truetype'),
+//       url('../fonts/ABCDisplay-ultrablack/ABCDisplay-Ub.svg#ABCDisplay-Ub') format('svg');
+//   font-weight: 900;
+//   font-style: normal;
+//   font-display: swap;
+// }
