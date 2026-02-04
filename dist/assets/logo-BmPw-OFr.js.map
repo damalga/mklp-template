@@ -1,1 +1,0 @@
-{"version":3,"file":"logo-BmPw-OFr.js","sources":["../../src/events/click/logo.js"],"sourcesContent":["export default function(comp) {\n  console.log('clicked', comp);\n};\n"],"names":["logo","comp"],"mappings":"AAAe,SAAAA,EAASC,EAAM,CAC5B,QAAQ,IAAI,UAAWA,CAAI,CAC7B"}

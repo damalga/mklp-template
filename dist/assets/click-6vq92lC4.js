@@ -1,2 +1,0 @@
-import{_ as n}from"./main-DkiaCyBx.js";function e(){console.log("sports tab clicked")}const{Voonto:c}=window,t=c.getInstance();t.component("logo").addEventListener("click",function(){n(async()=>{const{default:o}=await import("./logo-BmPw-OFr.js");return{default:o}},[]).then(({default:o})=>{o(this)})});t.component("footer-arrow").addEventListener("click",function(){console.log("footer arrow clicked")});t.component("sports-tab").addEventListener("click",e);
-//# sourceMappingURL=click-6vq92lC4.js.map

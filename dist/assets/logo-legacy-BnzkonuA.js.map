@@ -1,1 +1,0 @@
-{"version":3,"file":"logo-legacy-BnzkonuA.js","sources":["../../src/events/click/logo.js"],"sourcesContent":["export default function(comp) {\n  console.log('clicked', comp);\n};\n"],"names":["comp","console","log"],"mappings":"oFAAe,SAASA,GACtBC,QAAQC,IAAI,UAAWF,EACzB"}
